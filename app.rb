@@ -12,6 +12,6 @@ get '/square/:number' do
   "#{@result.to_s}"
 end
 
-
+get '/'
 
 end
