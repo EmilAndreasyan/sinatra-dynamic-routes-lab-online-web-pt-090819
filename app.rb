@@ -8,6 +8,10 @@ get '/reversename/:name' do
 end
 
 get '/square/:number' do
-  @result = params[:number] * 2
-  "#{@result}"
+  @result = params[:number].to_i * 2
+  "#{@result.to_s}"
+end
+
+
+
 end
