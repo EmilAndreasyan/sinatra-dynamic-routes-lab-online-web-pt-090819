@@ -25,6 +25,7 @@ get '/say/:word1/:word2/:word3/:word4/:word5' do
   @w3 = params[:word3]
   @w4 = params[:word4]
   @w5 = params[:word5]
+  "#{@s} #{@w1} #{@w2} #{@w3} #{@w4} #{@w5}"
 end
 
 end
