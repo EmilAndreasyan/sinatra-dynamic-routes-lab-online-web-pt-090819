@@ -15,6 +15,7 @@ end
 get '/say/:number/:phrase' do
   @num = params[:number]
   @phrase = params[:phrase]
+  "#{@num} #{@phrase}"
 end
 
 end
