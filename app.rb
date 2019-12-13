@@ -15,7 +15,7 @@ end
 get '/say/:number/:phrase' do
   @num = params[:number]
   @sentence = params[:phrase]
-  "#{@num} #{@sentence}"
+  "#{@sentence}" * @num
 end
 
 get '/say/:word1/:word2/:word3/:word4/:word5' do
