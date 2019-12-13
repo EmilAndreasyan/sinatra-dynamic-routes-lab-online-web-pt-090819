@@ -16,7 +16,7 @@ get '/say/:number/:phrase' do
   str = ""
   @sentence = params[:phrase]
   @num = params[:number].to_i
-  @num.times {str += @sentence}
+  @num.times {str += "#{@sentence}"}
   str
 end
 
