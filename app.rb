@@ -30,6 +30,19 @@ get '/say/:word1/:word2/:word3/:word4/:word5' do
 end
 
 get '/:operation/:number1/:number2' do
-
+@num1 = params[:number1]
+@num2 = params[:number2]
+@operand = params[:operation].to_i
+case @operand
+  when add
+    +
+  when substract
+    -
+  when multiply
+    *
+  when divide
+    /
+  end
+end
 end
 end
