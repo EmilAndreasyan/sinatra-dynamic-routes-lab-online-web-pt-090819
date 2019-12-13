@@ -36,7 +36,7 @@ get '/:operation/:number1/:number2' do
     case @operand
       when "add"
       (@num1 + @num2).to_s
-      when "substract"
+      when "subtract"
         (@num1 - @num2).to_s
       when "multiply"
         (@num1 * @num2).to_s
