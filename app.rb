@@ -12,6 +12,9 @@ get '/square/:number' do
   "#{@result.to_s}"
 end
 
-get '/'
+get '/say/:number/:phrase' do
+  @num = params[:number]
+  @phrase = params[:phrase]
+end
 
 end
